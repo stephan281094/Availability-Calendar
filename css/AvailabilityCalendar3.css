@@ -1,0 +1,140 @@
+.ac-wrapper {
+    position: relative;
+}
+
+.ac-wrapper:after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+.ac-wrapper .ac-head {
+    position: relative;
+    width: 100%;
+    float: left;
+    background-color: white;
+
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+
+}
+
+.ac-wrapper .ac-head:after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+.ac-wrapper .ac-head .ac-nav {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    color: #0088ff;
+}
+
+.ac-wrapper .ac-head .ac-controls:after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+.ac-wrapper .ac-head .ac-controls .ac-left {
+    float: left;
+    content: "<";
+}
+
+.ac-wrapper .ac-head .ac-controls .ac-right {
+    float: right;
+    content: ">";
+}
+
+.ac-wrapper .ac-head .ac-controls .ac-date {
+    position: relative;
+    line-height: 50px;
+    float: left;
+    height: 60px;
+    font-size: 14pt;
+    width: calc(100% - 120px);
+    text-align: center;
+}
+
+.ac-wrapper .ac-daytitles {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 25px;
+    white-space: nowrap;
+}
+
+.ac-wrapper .ac-daytitles .ac-day {
+    position: relative;
+    font-size: 10pt;
+    text-align: center;
+    line-height: 25px;
+    display: inline-block;
+    color: #0088ff;
+    font-weight: bold;
+    width: 200px;
+}
+
+
+
+
+
+.ac-wrapper .ac-body {
+    position: relative;
+    float: left;
+    white-space: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+
+.ac-wrapper .ac-body .ac-days {
+    float: left;
+    clear: left;
+}
+
+.ac-wrapper .ac-body .ac-days .ac-day {
+    position: relative;
+    display: inline-block;
+    margin-top: 1px;
+    width: 200px;
+    height: 75px;
+    font-size: 12pt;
+    background-color: white;
+    cursor: pointer;
+
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+}
+
+.ac-wrapper .ac-body .ac-days .ac-day:hover {
+    color: #0088ff;
+    background-color: #f5f5f5;
+}
+
+.ac-wrapper .ac-body .ac-days .ac-day .number {
+    font-weight: bold;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    line-height: 30px;
+    text-align: center;
+}
+
+.ac-wrapper .ac-body .ac-days .ac-day .price {
+    color: #888;
+    margin-top: 10px;
+    text-align: center;
+}
