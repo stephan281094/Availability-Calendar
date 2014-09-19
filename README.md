@@ -1,4 +1,5 @@
 ### Availability Calendar
+![](http://s15.postimg.org/lp8lqcx3t/Screen_Shot_2014_09_19_at_15_52_14.png)
 This is a jQuery/ CSS plugin that could be useful later for e.g. hotel websites.
 
 Libraries used:
