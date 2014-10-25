@@ -1,9 +1,22 @@
 $(document).ready(function () {
+    $.ajax({
+        url: 'data.json',
+        dataType: 'json',
+        success: function(data){
+            var template = $('#calendar-template').html();
+            var calendarData = Mustache.to_html(template, data);
+            $('#calendar').html(calendarData);
+            availabilityCalendar();
+        },
+        data: {},
+        async: false
+    });
+});
+
+function availabilityCalendar(){
     var isOpen = false;
 
     $('.ac-body .ac-week .ac-day').click(function () {
-        var number = $(this).children('.number').text();
-        $('.ac-body .ac-info').text(number);
 
         if (isOpen === false) {
             open($(this));
@@ -13,7 +26,6 @@ $(document).ready(function () {
             } else {
                 $('.ac-body .ac-week .ac-day').removeClass('active');
                 $(this).addClass('active');
-//                $('').$(this).attr('data-day');
             }
         }
     });
@@ -32,7 +44,7 @@ $(document).ready(function () {
         isOpen = false;
     }
 
-    $('.ac-head').click(function () {
+    $('.ac-head .ac-date').click(function () {
         close();
     });
-});
+}

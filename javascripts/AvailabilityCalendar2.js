@@ -1,3 +1,4 @@
+// An alternative version of the Availablity Calendar. This is still a 'test'.
 $(document).ready(function () {
     var isOpen = false;
 

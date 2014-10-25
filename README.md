@@ -1,11 +1,15 @@
-### Availability Calendar
+# Availability Calendar
+A minimalistic availability calendar that parses JSON into HTML using [mustache.js](http://mustache.github.io). The only thing you have to do is create an API!
 ![](http://i.imgur.com/nNw4PTn.png)
-This is a jQuery/ CSS plugin that could be useful later for e.g. hotel websites.
 
-Libraries used:
-- [jQuery](http://code.jquery.com/jquery-1.11.1.min.js)
-- [reset.css](http://meyerweb.com/eric/tools/css/reset/)
-- [typebase.css](https://raw.githubusercontent.com/devinhunt/typebase.css/master/typebase.css)
 
-NOTE:
-The calendar is not functional yet. It's basically just markup with styles.
+## Installation instructions
+* Install [Node JS](http://nodejs.org), [npm](http://npmjs.org) and [Gulp](http://gulpjs.com)
+* Run `npm install`
+* Run `gulp`
+
+This will download all libraries and opens the index.html using your default browser.
+
+
+## License
+Code will be released under [the MIT license](LICENSE).

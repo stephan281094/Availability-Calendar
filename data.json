@@ -1,0 +1,160 @@
+{
+	"weeks": [
+		{
+			"days": [
+				{
+					"number": "1",
+					"price": "€ 120",
+					"status": "reserved"
+				},
+				{
+					"number": "2",
+					"price": "€ 130",
+					"status": "reserved"
+				},
+				{
+					"number": "3",
+					"price": "€ 140",
+					"status": ""
+				},
+				{
+					"number": "4",
+					"price": "€ 150",
+					"status": ""
+				},
+				{
+					"number": "5",
+					"price": "€ 160",
+					"status": ""
+				},
+				{
+					"number": "6",
+					"price": "€ 170",
+					"status": "unavailable"
+				},
+				{
+					"number": "7",
+					"price": "€ 180",
+					"status": "booked"
+				}
+			]
+		},
+		{
+			"days": [
+				{
+					"number": "8",
+					"price": "€ 120",
+					"status": "booked"
+				},
+				{
+					"number": "9",
+					"price": "€ 130",
+					"status": "unavailable"
+				},
+				{
+					"number": "10",
+					"price": "€ 140",
+					"status": ""
+				},
+				{
+					"number": "11",
+					"price": "€ 150",
+					"status": "booked"
+				},
+				{
+					"number": "12",
+					"price": "€ 160",
+					"status": ""
+				},
+				{
+					"number": "13",
+					"price": "€ 170",
+					"status": ""
+				},
+				{
+					"number": "14",
+					"price": "€ 180",
+					"status": ""
+				}
+			]
+		},
+		{
+			"days": [
+				{
+					"number": "15",
+					"price": "€ 120",
+					"status": ""
+				},
+				{
+					"number": "16",
+					"price": "€ 130",
+					"status": ""
+				},
+				{
+					"number": "17",
+					"price": "€ 140",
+					"status": "unavailable"
+				},
+				{
+					"number": "18",
+					"price": "€ 150",
+					"status": ""
+				},
+				{
+					"number": "19",
+					"price": "€ 160",
+					"status": ""
+				},
+				{
+					"number": "20",
+					"price": "€ 130",
+					"status": "booked"
+				},
+				{
+					"number": "21",
+					"price": "€ 120",
+					"status": ""
+				}
+			]
+		},
+		{
+			"days": [
+				{
+					"number": "22",
+					"price": "€ 120",
+					"status": "reserved"
+				},
+				{
+					"number": "23",
+					"price": "€ 130",
+					"status": "reserved"
+				},
+				{
+					"number": "24",
+					"price": "€ 140",
+					"status": ""
+				},
+				{
+					"number": "25",
+					"price": "€ 150",
+					"status": ""
+				},
+				{
+					"number": "26",
+					"price": "€ 160",
+					"status": ""
+				},
+				{
+					"number": "27",
+					"price": "€ 170",
+					"status": "unavailable"
+				},
+				{
+					"number": "28",
+					"price": "€ 180",
+					"status": "booked"
+				}
+			]
+		}
+	]
+}
