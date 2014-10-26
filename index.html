@@ -11,25 +11,26 @@
     <script src="javascripts/AvailabilityCalendar.js"></script>
 </head>
 <body>
-<div class="container">
     <div class="ac-wrapper">
         <div class="ac-head">
-            <div class="ac-controls">
-                <div class="ac-nav ac-left"><i class="icon-arrow-left"></i></div>
-                <div class="ac-date">
-                    June 2014
-                </div>
-                <div class="ac-nav ac-right"><i class="icon-arrow-right"></i></div>
-            </div>
-            <div class="ac-days">
-                <div class="ac-day">Sun</div>
-                <div class="ac-day">Mon</div>
-                <div class="ac-day">Tue</div>
-                <div class="ac-day">Wed</div>
-                <div class="ac-day">Thu</div>
-                <div class="ac-day">Fri</div>
-                <div class="ac-day">Sat</div>
-            </div>
+            <nav>
+                <ul>
+                    <li class="ac-nav ac-left"><i class="icon-arrow-left"></i></li>
+                    <li class="ac-nav ac-right"><i class="icon-arrow-right"></i></li>
+                </ul>
+            </nav>
+            <span class="ac-date">
+                June 2014
+            </span>
+            <ul class="ac-days">
+                <li class="ac-day">Sun</li>
+                <li class="ac-day">Mon</li>
+                <li class="ac-day">Tue</li>
+                <li class="ac-day">Wed</li>
+                <li class="ac-day">Thu</li>
+                <li class="ac-day">Fri</li>
+                <li class="ac-day">Sat</li>
+            </ul>
         </div>
         <div class="ac-body" id="calendar">
 
@@ -39,16 +40,15 @@
 
     <script id="calendar-template" type="text/template">
         {{ #weeks }}
-            <div class="ac-week">
+            <ul class="ac-week">
                 {{ #days }}
-                    <div class="{{ status }} ac-day">
-                        <div class="number">{{ number }}</div>
-                        <div class="price">{{ price }}</div>
-                    </div>
+                    <li class="{{ status }} ac-day">
+                        <span class="number">{{ number }}</span>
+                        <span class="price">{{ price }}</span>
+                    </li>
                 {{ /days }}
-            </div>
+            </ul>
         {{ /weeks }}
     </script>
-</div>
 </body>
 </html>

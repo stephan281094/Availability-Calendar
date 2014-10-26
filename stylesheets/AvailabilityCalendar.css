@@ -1,5 +1,59 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('icons/icomoon.eot?-7hwc0y');
+    src:url('icons/icomoon.eot?#iefix-7hwc0y') format('embedded-opentype'),
+    url('icons/icomoon.woff?-7hwc0y') format('woff'),
+    url('icons/icomoon.ttf?-7hwc0y') format('truetype'),
+    url('icons/icomoon.svg?-7hwc0y#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-left:before {
+    content: "\e609";
+}
+.icon-arrow-right:before {
+    content: "\e60a";
+}
+
+
 .ac-wrapper {
     position: relative;
+    background: #f0f0f0;
+}
+
+.ac-wrapper ul, .ac-wrapper li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ac-wrapper:after, .ac-controls:after {
+    content: "";
+    clear: both;
+    display: block;
 }
 
 .ac-wrapper .ac-head {
@@ -14,12 +68,6 @@
 
 }
 
-.ac-wrapper .ac-head:before {
-    content: " ";
-    clear: both;
-    display: block;
-}
-
 .ac-wrapper .ac-head .ac-nav {
     position: relative;
     height: 60px;
@@ -30,17 +78,18 @@
     color: #0088ff;
 }
 
-.ac-wrapper .ac-head .ac-controls .ac-left {
+.ac-wrapper .ac-head .ac-left {
     float: left;
     content: "<";
 }
 
-.ac-wrapper .ac-head .ac-controls .ac-right {
+.ac-wrapper .ac-head .ac-right {
     float: right;
+    clear: right;
     content: ">";
 }
 
-.ac-wrapper .ac-head .ac-controls .ac-date {
+.ac-wrapper .ac-head .ac-date {
     position: relative;
     line-height: 50px;
     float: left;
@@ -65,6 +114,8 @@
     float: left;
     color: #0088ff;
     font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
 
 .ac-wrapper .ac-head .ac-days .ac-day {
@@ -108,19 +159,15 @@
     float: left;
     height: 75px;
     cursor: pointer;
-    margin-top: 1px;
+    box-shadow: inset 0 1px 0 0 #f0f0f0;
     background-color: white;
+    overflow: hidden;
+    width: calc(100%/7);
 
     -webkit-user-select: none;  /* Chrome all / Safari all */
     -moz-user-select: none;     /* Firefox all */
     -ms-user-select: none;      /* IE 10+ */
 }
-
-.ac-wrapper .ac-body .ac-day {
-    overflow: hidden;
-    width: 14.285714%;
-}
-
 .ac-wrapper .ac-body .active.ac-day {
     color: #0088ff;
     border-bottom: 3px solid #0088ff;
@@ -142,6 +189,7 @@
     border-radius: 100%;
     line-height: 30px;
     text-align: center;
+    display: block;
 }
 
 .ac-wrapper .ac-body .ac-day:hover {
@@ -173,6 +221,7 @@
     color: #888;
     margin-top: 10px;
     text-align: center;
+    display: block;
 }
 
 .ac-wrapper .ac-body .ac-info {
